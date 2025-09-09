@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard - E-Commerce</title>
+</head>
+<body>
+  <h1>Dashboard</h1>
+  <p id="welcome"></p>
+  <button id="logoutBtn">Logout</button>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBIiG6_7dlz4We7Ag6W1b2yoLywzKXM4P0",
+    authDomain: "my-ecommerce-demo-30674.firebaseapp.com",
+    projectId: "my-ecommerce-demo-30674",
+    storageBucket: "my-ecommerce-demo-30674.firebasestorage.app",
+    messagingSenderId: "938724340736",
+    appId: "1:938724340736:web:14edfc06f89d6a0dfe54e5",
+    measurementId: "G-H8MKB14NBH"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>
